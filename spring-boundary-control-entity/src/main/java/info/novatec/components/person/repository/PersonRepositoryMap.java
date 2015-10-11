@@ -29,31 +29,17 @@ public class PersonRepositoryMap implements PersonRepository {
 
 	@Override
 	public long count() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public void delete(Long id) {
-		// TODO Auto-generated method stub
-
+		return personMap.size();
 	}
 
 	@Override
 	public void deleteAll() {
-		// TODO Auto-generated method stub
-
+		personMap.clear();
 	}
 
 	@Override
 	public List<Person> findAll() {
 		return new ArrayList<>(personMap.values());
-	}
-
-	@Override
-	public Person findOne(Long id) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override

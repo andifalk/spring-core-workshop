@@ -10,13 +10,9 @@ public interface PersonService {
 
 	Person save(Person person);
 
-	Person findOne(Long id);
-
 	List<Person> findAll();
 
 	void deleteAll();
-
-	void delete(Long id);
 
 	long count();
 
